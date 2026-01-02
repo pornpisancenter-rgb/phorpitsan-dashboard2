@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ลูกค้าค้างชำระ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>พรพิศาลค้าส่ง</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="debt.html">ลูกค้าค้างชำระ</a>
+</div>
+
+<div class="main">
+<h1>ลูกค้าค้างชำระ</h1>
+
+<table>
+<tr>
+<th>ชื่อลูกค้า</th>
+<th>ยอดค้าง</th>
+<th>ครบกำหนด</th>
+</tr>
+<tr>
+<td>ร้าน A</td>
+<td>15,000</td>
+<td>10/01/2569</td>
+</tr>
+<tr>
+<td>ร้าน B</td>
+<td>32,500</td>
+<td>15/01/2569</td>
+</tr>
+</table>
+
+</div>
+</body>
+</html>

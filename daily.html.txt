@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>สรุปรายวัน</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>พรพิศาลค้าส่ง</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="daily.html">รายวัน</a>
+</div>
+
+<div class="main">
+<h1>สรุปรายวัน</h1>
+
+<table>
+<thead>
+<tr>
+<th>วันที่</th>
+<th>เงินสด</th>
+<th>เงินโอน</th>
+<th>ค้างชำระ</th>
+<th>รวม</th>
+</tr>
+</thead>
+<tbody id="dailyTable"></tbody>
+</table>
+
+</div>
+
+<script src="js/data.js"></script>
+<script>
+let html = '';
+salesData.forEach(d => {
+  html += `<tr>
+    <td>${d.date}</td>
+    <td>${d.cash}</td>
+    <td>${d.transfer}</td>
+    <td>${d.debt}</td>
+    <td>${d.cash + d.transfer}</td>
+  </tr>`;
+});
+document.getElementById('dailyTable').innerHTML = html;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>พรพิศาลค้าส่ง | Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div class="sidebar">
+  <h2>พรพิศาลค้าส่ง</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="daily.html">รายวัน</a>
+  <a href="monthly.html">รายเดือน</a>
+  <a href="debt.html">ลูกค้าค้างชำระ</a>
+</div>
+
+<div class="main">
+  <h1>สรุปยอดขายภาพรวม</h1>
+
+  <div class="cards">
+    <div class="card">ยอดขายรวม<br><span id="totalSales">0</span></div>
+    <div class="card">เงินสด<br><span id="cash">0</span></div>
+    <div class="card">เงินโอน<br><span id="transfer">0</span></div>
+    <div class="card">เงินค้างชำระ<br><span id="debt">0</span></div>
+  </div>
+
+  <canvas id="salesChart"></canvas>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

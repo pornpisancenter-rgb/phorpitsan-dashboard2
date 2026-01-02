@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>สรุปรายเดือน</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>พรพิศาลค้าส่ง</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="monthly.html">รายเดือน</a>
+</div>
+
+<div class="main">
+<h1>สรุปรายเดือน</h1>
+
+<table>
+<thead>
+<tr>
+<th>เดือน</th>
+<th>ยอดขายรวม</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>มกราคม</td>
+<td>350,000</td>
+</tr>
+<tr>
+<td>กุมภาพันธ์</td>
+<td>420,000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>
